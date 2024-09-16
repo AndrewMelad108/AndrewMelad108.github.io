@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andrew Melad - Resume</title>
+    <style>
+      /* Scrollbar styling for WebKit browsers */
+      ::-webkit-scrollbar {
+        width: 12px; /* Width of the scrollbar */
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #2c2c2c; /* Track background */
+        border-radius: 10px; /* Rounded corners for the track */
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #e74c3c; /* Thumb color */
+        border-radius: 10px; /* Rounded corners for the thumb */
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #c0392b; /* Thumb color on hover */
+      }
+
+      body {
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.6;
+        padding: 20px;
+        background-color: #121212;
+        color: #f1f1f1;
+      }
+      .container {
+        background-color: #1e1e1e;
+        padding: 40px;
+        margin: 0 auto;
+        max-width: 900px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        animation: fadeIn 1.2s ease-in-out;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #e74c3c;
+        font-weight: 700;
+      }
+      h1 {
+        text-align: center;
+        font-size: 3em;
+        margin-bottom: 20px;
+      }
+      h2 {
+        margin-top: 40px;
+        border-bottom: 2px solid #e74c3c;
+        padding-bottom: 5px;
+      }
+      p,
+      ul {
+        margin-bottom: 10px;
+        line-height: 1.8;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      a {
+        color: #1abc9c;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .section {
+        animation: slideIn 1s ease-in-out;
+        margin-bottom: 30px;
+      }
+      .project-title {
+        font-weight: 600;
+        font-size: 1.2em;
+        margin-top: 10px;
+      }
+      .project-description {
+        margin-left: 15px;
+        font-size: 0.95em;
+      }
+      .skill-list,
+      .link-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .skill-list li,
+      .link-list li,
+      .link-list li a {
+        background: #e74c3c;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 0.9em;
+        margin: 5px 0;
+        list-style: none;
+      }
+      /* Animation Styles */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes slideIn {
+        from {
+          transform: translateY(20px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="section">
+        <h1>Andrew Melad</h1>
+        <p style="text-align: center">
+          <strong>Frontend Developer</strong> <br />
+          Email:
+          <a href="mailto:andrewmelad108@gmail.com">andrewmelad108@gmail.com</a>
+          | Phone: +20 01210673776 | Location: Cairo, Egypt
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Professional Experience</h2>
+        <h3>Front End Developer - xWare Integrated Solutions</h3>
+        <p>01/2023 – present | Assiut, Egypt</p>
+        <ul>
+          <li>
+            Mentored over 15 junior developers, improving their coding skills
+            and career paths.
+          </li>
+          <li>
+            Directed the development of 3+ web applications using Vue.js,
+            TypeScript, and Supabase.
+          </li>
+        </ul>
+
+        <h3>Front End Developer - Freelance</h3>
+        <p>
+          Delivered 3+ freelance projects focusing on responsive design and
+          performance optimization, meeting all client specifications.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Projects</h2>
+
+        <div class="project">
+          <p class="project-title">Table Package</p>
+          <p class="project-description">
+            Developed a flexible, reusable table component for Vue 3 with
+            features like dynamic pagination, search & filter, row selection,
+            and column sorting.
+            <a
+              href="https://www.npmjs.com/package/v-table-system"
+              target="_blank"
+              >View Package</a
+            >
+          </p>
+        </div>
+
+        <div class="project">
+          <p class="project-title">XLab</p>
+          <p class="project-description">
+            Built a desktop application with Electron, Vue, Vite, and TypeScript
+            for laboratory data management, supporting various roles.
+          </p>
+        </div>
+      </div>
+
+      <div class="project">
+        <p class="project-title">Giftfied</p>
+        <p class="project-description">
+          Built a customer loyalty management application using Vue.js,
+          Supabase, and TypeScript to handle customer points and reward systems.
+          <a href="https://giftfied.com" target="_blank">Visit Project</a>
+        </p>
+      </div>
+
+      <div class="project">
+        <p class="project-title">myGiftfied</p>
+        <p class="project-description">
+          Developed an app to manage loyalty points across multiple merchants,
+          enhancing user experience.
+          <a href="https://mygiftfied.com" target="_blank">Visit Project</a>
+        </p>
+      </div>
+
+      <div class="project">
+        <p class="project-title">Jack</p>
+        <p class="project-description">
+          Developed an automotive services platform for car repairs, parts
+          purchase, and sales, integrating user types and chat functionality.
+          <a href="https://jack-system.vercel.app" target="_blank"
+            >Visit Project</a
+          >
+        </p>
+      </div>
+
+      <div class="project">
+        <p class="project-title">AM Store</p>
+        <p class="project-description">
+          Built an e-commerce platform with separate guest and admin roles,
+          enabling guests to purchase items and admins to manage data using
+          Tailwind CSS, Vue.js, and Firebase.
+          <a href="https://am-store-five.vercel.app/home" target="_blank"
+            >Visit Project</a
+          >
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Education</h2>
+        <h3>Bachelor of Computer Science - Assiut University</h3>
+        <p>09/2017 – 06/2021 | Assiut, Egypt</p>
+        <p>Graduation Project: Excellent</p>
+      </div>
+
+      <div class="section">
+        <h2>Skills</h2>
+        <ul class="skill-list">
+          <li>HTML & CSS3</li>
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          <li>Vue.js</li>
+          <li>React.js</li>
+          <li>TailwindCSS</li>
+          <li>Electron.js</li>
+          <li>REST APIs</li>
+          <li>Firebase & Supabase</li>
+          <li>Node.js</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Links</h2>
+        <ul class="link-list">
+          <li><a href="mailto:andrewmelad108@gmail.com">Email Me</a></li>
+          <li>
+            <a href="https://github.com/AndrewMelad108">GitHub Profile</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/andrew-melad-b77ab3198/"
+              >LinkedIn Profile</a
+            >
+          </li>
+          <li>
+            <a href="https://protfolio-five-dun.vercel.app/">Portfolio</a>
+          </li>
+          <li><a href="https://xware.co/">xWare Integrated Solutions</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
